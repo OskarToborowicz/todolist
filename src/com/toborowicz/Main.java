@@ -18,7 +18,7 @@ public class Main {
             taskList.add(new Task(scan.nextLine().trim()));
             System.out.println("Do you want to add more to the list? (type yes if you want to continue)");
         }
-
+        System.out.println(" ");
         scan.close();
         System.out.println(taskList.stream().map(Object::toString).collect(Collectors.joining(", ")));
     }
